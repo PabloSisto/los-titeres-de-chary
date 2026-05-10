@@ -1,4 +1,4 @@
-export const categories = ['Todos', 'Animales', 'Dinosaurios', 'Personajes', 'Bichitos', 'Surtidos', 'Títeres de dedo']
+export const categories = ['Todos', 'Animales', 'Dinosaurios', 'Personajes', 'Bichitos', 'Surtidos', 'Títeres de dedo', 'Manopla']
 
 export const fallbackProducts = [
   {
@@ -86,7 +86,7 @@ export const fallbackProducts = [
     id: 'patito-artesanal',
     name: 'Patito',
     description: 'Títere de dedo pensado para manos pequeñas, juegos suaves y canciones.',
-    category: 'Títeres de dedo',
+    category: 'Manopla',
     featured: false,
     order: 26,
     image: '/images/patito.png',
@@ -95,7 +95,7 @@ export const fallbackProducts = [
     id: 'sapito-artesanal',
     name: 'Sapito',
     description: 'Una pieza divertida para escenas breves, rondas y relatos llenos de ritmo.',
-    category: 'Títeres de dedo',
+    category: 'Manopla',
     featured: false,
     order: 27,
     image: '/images/sapito.png',
@@ -104,7 +104,7 @@ export const fallbackProducts = [
     id: 'pareja-uno-artesanal',
     name: 'Pareja',
     description: 'Títeres de dedo para representar vínculos, diálogos y pequeñas historias.',
-    category: 'Títeres de dedo',
+    category: 'Manopla',
     featured: false,
     order: 28,
     image: '/images/pareja-1.png',
@@ -113,7 +113,7 @@ export const fallbackProducts = [
     id: 'pareja-dos-artesanal',
     name: 'Pareja',
     description: 'Otra variante artesanal para ampliar escenas familiares o teatrales.',
-    category: 'Títeres de dedo',
+    category: 'Manopla',
     featured: false,
     order: 29,
     image: '/images/pareja-2.png',
