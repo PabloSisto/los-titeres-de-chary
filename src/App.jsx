@@ -90,7 +90,7 @@ export default function App() {
       <main>
         <section className="hero" id="inicio">
           <div className="hero-media" aria-hidden="true">
-            <img src="/images/stand.png" alt="" />
+            <img src="/images/stand-optimized.webp" alt="" />
           </div>
           <div className="hero-content">
             <span className="eyebrow">
