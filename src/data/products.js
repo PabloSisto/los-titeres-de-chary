@@ -3,7 +3,7 @@ export const categories = ['Todos', 'Animales', 'Dinosaurios', 'Personajes', 'Bi
 export const fallbackProducts = [
   {
     id: 'delfin-artesanal',
-    name: 'Delfín artesanal',
+    name: 'Delfín',
     description: 'Títere de delfín hecho a mano, ideal para juegos y cuentos marinos.',
     category: 'Animales',
     featured: true,

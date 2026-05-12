@@ -103,8 +103,6 @@ export default function App() {
               Un espacio cálido y colorido para descubrir piezas únicas, pensadas para jugar, contar
               cuentos y compartir momentos familiares.
             </p>
-            <ContactLinks channels={enabledContactChannels} variant="hero" />
-            {youtubeChannel?.note ? <p className="contact-aside">{youtubeChannel.note}</p> : null}
           </div>
         </section>
 
@@ -114,7 +112,6 @@ export default function App() {
           </div>
           <div className="intro-copy">
             <div className="section-heading">
-              <span className="section-kicker">Artesanal y cercano</span>
               <h2>Pequeñas creaciones para grandes historias</h2>
             </div>
             <div className="intro-text">
@@ -149,15 +146,10 @@ export default function App() {
         <section className="section featured-section" aria-labelledby="destacados-title">
           <div className="section-heading">
             <span className="section-kicker">Destacados</span>
-            <h2 id="destacados-title">Productos para mirar primero</h2>
+            <h2 id="destacados-title">Los más pedidos</h2>
           </div>
           <FeaturedCarousel products={featuredProducts.length ? featuredProducts : products} onOpen={setSelectedProduct} />
         </section>
-
-        <div className="phrase-banner">
-          <span className="phrase-banner-kicker">Un pequeño mundo hecho a mano</span>
-          <p>Personajes creados con cariño y color para acompañar juegos, cuentos y recuerdos compartidos.</p>
-        </div>
 
         <section className="section gallery-band" id="galeria" aria-labelledby="galeria-title">
           <div className="section-heading">
@@ -177,36 +169,44 @@ export default function App() {
             <span className="section-kicker">Contacto</span>
             <h2 id="contacto-title">Consultas y pedidos</h2>
           </div>
-          <p>
-            Para consultar disponibilidad, pedir un diseño especial o coordinar una compra, podés
-            escribir por cualquiera de estos medios.
-          </p>
-          <ContactLinks channels={enabledContactChannels} />
-          {mercadoLibreChannel ? (
-            <div className="contact-purchase-note">
+          <div className="contact-layout">
+            <div className="contact-primary">
               <p>
-                Comprando directo por WhatsApp podés acceder a descuentos abonando por transferencia o
-                en efectivo.
+                Para consultar disponibilidad, pedir un diseño especial o coordinar una compra, podés
+                escribir por cualquiera de estos medios.
               </p>
-              <p>También podés encontrarnos en MercadoLibre.</p>
-              <a href={mercadoLibreChannel.href} target="_blank" rel="noopener noreferrer">
-                Ver tienda en MercadoLibre
-              </a>
-              <div className="contact-shipping-note">
-                <Package size={16} />
-                <span>Realizamos envíos a toda Argentina.</span>
-              </div>
+              <ContactLinks channels={enabledContactChannels} />
+              {youtubeChannel?.note ? <p className="contact-aside">{youtubeChannel.note}</p> : null}
             </div>
-          ) : null}
-          {youtubeChannel?.note ? <p className="contact-aside">{youtubeChannel.note}</p> : null}
-          {emailChannel?.value ? (
-            <div className="contact-email-card">
-              <span className="contact-email-label">Email de contacto</span>
-              <a href={emailChannel.href} target="_blank" rel="noopener noreferrer" className="contact-email-value">
-                {emailChannel.value}
-              </a>
+
+            <div className="contact-secondary">
+              {mercadoLibreChannel ? (
+                <div className="contact-purchase-note">
+                  <p>
+                    Comprando directo por WhatsApp podés acceder a descuentos abonando por transferencia o
+                    en efectivo.
+                  </p>
+                  <p>También podés encontrarnos en MercadoLibre.</p>
+                  <a href={mercadoLibreChannel.href} target="_blank" rel="noopener noreferrer">
+                    Ver tienda en MercadoLibre
+                  </a>
+                  <div className="contact-shipping-note">
+                    <Package size={16} />
+                    <span>Realizamos envíos a toda Argentina.</span>
+                  </div>
+                </div>
+              ) : null}
+
+              {emailChannel?.value ? (
+                <div className="contact-email-card">
+                  <span className="contact-email-label">Email de contacto</span>
+                  <a href={emailChannel.href} target="_blank" rel="noopener noreferrer" className="contact-email-value">
+                    {emailChannel.value}
+                  </a>
+                </div>
+              ) : null}
             </div>
-          ) : null}
+          </div>
         </section>
       </main>
 
