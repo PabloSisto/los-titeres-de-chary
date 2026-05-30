@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://los-titeres-de-chary.vercel.app/sitemap.xml

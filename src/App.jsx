@@ -79,7 +79,7 @@ export default function App() {
           <span className="brand-mark">
             <Sparkles size={18} />
           </span>
-          <span>Los títeres de Chary</span>
+          <span>Los Títeres de Chary</span>
         </a>
         <nav className="nav-links" aria-label="Navegación principal">
           <a href="#galeria">Galería</a>
@@ -89,26 +89,34 @@ export default function App() {
 
       <main>
         <section className="hero" id="inicio">
-          <div className="hero-media" aria-hidden="true">
-            <img src="/images/stand-optimized.webp" alt="" />
+          <div className="hero-media">
+            <img
+              src="/images/stand-optimized.webp"
+              alt="Espectáculo infantil de títeres artesanales en Buenos Aires"
+              fetchPriority="high"
+            />
           </div>
           <div className="hero-content">
             <span className="eyebrow">
               <Heart size={16} />
               Hecho a mano
             </span>
-            <h1>Los títeres de Chary</h1>
-            <p className="hero-subtitle">Títeres y productos artesanales hechos a mano con amor</p>
+            <h1>Los Títeres de Chary</h1>
+            <p className="hero-subtitle">Espectáculos infantiles y títeres artesanales hechos a mano en Argentina</p>
             <p className="hero-copy">
-              Un espacio cálido y colorido para descubrir piezas únicas, pensadas para jugar, contar
-              cuentos y compartir momentos familiares.
+              Shows de títeres para cumpleaños infantiles, jardines de infantes, escuelas primarias y eventos
+              para niños en Buenos Aires, con personajes únicos para jugar, aprender e imaginar.
             </p>
           </div>
         </section>
 
         <section className="section intro-section" aria-label="Presentación">
           <div className="intro-media">
-            <img src="/images/chary-hero.png" alt="Chary con sus títeres artesanales" />
+            <img
+              src="/images/chary-hero.png"
+              alt="Chary con sus títeres artesanales hechos a mano"
+              loading="lazy"
+            />
           </div>
           <div className="intro-copy">
             <div className="section-heading">
@@ -117,21 +125,22 @@ export default function App() {
             <div className="intro-text">
               <p>
                 Mi nombre es Chary y soy artesana. Cada títere nace de mis manos con paciencia, color y
-                mucho cariño, pensado para acompañar juegos, cuentos y momentos compartidos.
+                mucho cariño, pensado para acompañar juegos, cuentos, cumpleaños infantiles y momentos
+                compartidos.
               </p>
               <p>
-                Los títeres están creados para jugar, imaginar, representar historias y compartir
-                momentos únicos donde, por un instante, dejamos de lado las pantallas y volvemos a un
-                mundo de creatividad, emoción y juego como en otras épocas.
+                Los títeres y marionetas están creados para jugar, imaginar, representar historias y
+                compartir momentos únicos donde, por un instante, dejamos de lado las pantallas y volvemos
+                a un mundo de creatividad, emoción y juego como en otras épocas.
               </p>
               <p>
-                Muchos de estos personajes también son elegidos por docentes y familias como
+                Familias, docentes, jardines de infantes y escuelas primarias eligen estos personajes como
                 herramientas para estimular la imaginación, la memoria, la expresión y el aprendizaje a
-                través de personajes únicos, llenos de ternura y personalidad propia.
+                través de títeres artesanales llenos de ternura y personalidad propia.
               </p>
               <p>
-                Cada producto se realiza con dedicación, combinando texturas suaves, colores alegres y
-                detalles pensados para que cada títere tenga su propia magia.
+                Cada producto se realiza con dedicación en Argentina, combinando texturas suaves, colores
+                alegres y detalles pensados para que cada títere tenga su propia magia.
               </p>
             </div>
           </div>
@@ -172,8 +181,9 @@ export default function App() {
           <div className="contact-layout">
             <div className="contact-primary">
               <p>
-                Para consultar disponibilidad, pedir un diseño especial o coordinar una compra, podés
-                escribir por cualquiera de estos medios.
+                Para consultar disponibilidad, pedir un diseño especial o coordinar espectáculos de títeres
+                en Buenos Aires para cumpleaños, jardines, escuelas o eventos infantiles, podés escribir
+                por cualquiera de estos medios.
               </p>
               <ContactLinks channels={enabledContactChannels} />
               {youtubeChannel?.note ? <p className="contact-aside">{youtubeChannel.note}</p> : null}
@@ -211,7 +221,7 @@ export default function App() {
       </main>
 
       <footer className="footer">
-        <span>Los títeres de Chary</span>
+        <span>Los Títeres de Chary</span>
         <span>Productos artesanales hechos a mano</span>
       </footer>
 

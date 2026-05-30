@@ -26,7 +26,7 @@ export default function ProductModal({ product, onClose }) {
           <X size={22} />
         </button>
         <div className="modal-media">
-          <img src={product.image} alt={product.name} />
+          <img src={product.image} alt={`${product.name}: títere artesanal hecho a mano`} />
         </div>
         <div className="modal-content">
           <span className="category-pill">{product.category}</span>

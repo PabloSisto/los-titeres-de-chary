@@ -1,6 +1,10 @@
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { useState } from 'react'
 
+function getFeaturedAlt(product) {
+  return `${product.name}: personaje de títere artesanal hecho a mano`
+}
+
 export default function FeaturedCarousel({ products, onOpen }) {
   const [index, setIndex] = useState(0)
   const product = products[index]
@@ -17,7 +21,7 @@ export default function FeaturedCarousel({ products, onOpen }) {
       </button>
 
       <button className="featured-card" type="button" onClick={() => onOpen(product)}>
-        <img src={product.image} alt={product.name} />
+        <img src={product.image} alt={getFeaturedAlt(product)} loading="lazy" />
         <span className="category-pill">{product.category}</span>
         <div>
           <h3>{product.name}</h3>

@@ -193,7 +193,7 @@ export const fallbackProducts = [
   {
     id: 'dedo-dos-artesanal',
     name: 'Voladores',
-    description: 'Una pieza liviana y colorida para escenas delicadas y luminosas.',
+    description: 'Títeres de dedo livianos y coloridos para escenas delicadas y luminosas.',
     category: 'Títeres de dedo',
     featured: false,
     order: 34,
@@ -202,7 +202,7 @@ export const fallbackProducts = [
   {
     id: 'dedo-uno-artesanal',
     name: 'Títeres de dedo surtidos',
-    description: 'Una pieza liviana y colorida para escenas delicadas y luminosas.',
+    description: 'Personajes artesanales pequeños para jugar, cantar y crear historias con las manos.',
     category: 'Títeres de dedo',
     featured: false,
     order: 35,
